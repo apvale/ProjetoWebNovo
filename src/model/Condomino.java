@@ -27,6 +27,9 @@ public class Condomino extends Usuario {
 	@Column(nullable=false, unique=true, length=100)
 	private String email;
 	
+	@Column(nullable=true, length=100)
+	private String inquilino;
+	
 	@OneToOne(cascade=CascadeType.ALL, mappedBy="dono")
 	private Veiculo veiculo;
 	
@@ -101,5 +104,13 @@ public class Condomino extends Usuario {
 	}
 	public Boolean getAtivado() {
 		return this.ativado;
+	}
+
+	public String getInquilino() {
+		return inquilino;
+	}
+
+	public void setInquilino(String inquilino) {
+		this.inquilino = inquilino;
 	}
 }
