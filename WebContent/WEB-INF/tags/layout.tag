@@ -11,6 +11,7 @@
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="<c:url value="/design/js/jquery.min.js"/>"></script>
         <script src="<c:url value="/design/js/kickstart.js"/>"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
         <script>
         	
         $(function(){
