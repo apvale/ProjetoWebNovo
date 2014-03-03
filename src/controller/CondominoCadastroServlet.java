@@ -32,6 +32,7 @@ public class CondominoCadastroServlet extends HttpServlet {
 		
 		// Condomino
 		String nome = request.getParameter("nome").trim();
+		String inquilino = request.getParameter("inquilino").trim();
 		String email = request.getParameter("email").trim();
 		Integer apto = Integer.parseInt(request.getParameter("apto"));
 		Integer telefone = Integer.parseInt(request.getParameter("telefone").replace("-", ""));
@@ -59,6 +60,7 @@ public class CondominoCadastroServlet extends HttpServlet {
 			c.setUsuario("apto" + apto);
 			c.setData(new Date());
 			c.setNome(nome);
+			c.setInquilino(inquilino);
 			c.setApto(apto);
 			c.setTelefone(telefone);
 			c.setEmail(email);

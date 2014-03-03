@@ -2,6 +2,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="my" tagdir="/WEB-INF/tags"%>
 <my:layout titulo="Cadastro de Condômino" tituloPage="Jampa Palace">
+	
+
     <div class="container">
         <form method="post" action="<c:url value="/condomino/cadastro"/>" class="vertical">
             <c:if test="${type eq 0}">
@@ -19,6 +21,16 @@
                 
                 <label for="proprietario">Proprietário: </label>
                 <input id="proprietario" type="text" name="nome" required />
+                
+                <label>Atualmente há inquilino no seu apartamento? <span>Se não, apenas prossiga com o cadastro. </span></label>
+                <input type="checkbox" name="inquilinosim" id="inquilinosim">Sim
+               
+                               
+                <div id="inquilino" style="display: none; margin-top: 3px;">
+                	<label for="inquilino">Inquilino: </label>
+                	<input type="text" name="inquilino" required />                
+                </div>
+                
 
                 <label for="apto">Apto: </label>
                 <input id="apto" type="number" name="apto" min="1" required />
@@ -54,10 +66,5 @@
             </div>
         </form>
     </div>
-    <div class="col_4">
-        <div class="footer">
-            <i id="iconecafe" class="icon-coffee"></i>
-            <p id="direitos">Projeto PWEB II - Amanda e Ana Paula</p>
-        </div>
-    </div>
+   
 </my:layout>

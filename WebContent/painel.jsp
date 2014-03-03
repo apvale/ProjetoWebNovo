@@ -17,6 +17,7 @@
 						<li><a href="#" class="abrir-programa" data-url="<c:url value="admin/colaboradores/cadastrar"/>">Cadastrar</a></li>
 					</ul>
 				</li>
+				<li><a href="LogoutServlet">Logout</a></li>
 			</ul>
 		</div>
 		<div class="col_9 column" id="programas"></div>
