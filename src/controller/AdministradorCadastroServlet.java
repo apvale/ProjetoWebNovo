@@ -40,6 +40,7 @@ public class AdministradorCadastroServlet extends HttpServlet {
 		String message = "";
 		
 		// Condominio
+		//teste
 		String nome = request.getParameter("nome").trim();
 		String inquilino = request.getParameter("inquilino").trim();
 		String email = request.getParameter("email").trim();
