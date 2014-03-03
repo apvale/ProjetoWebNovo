@@ -28,7 +28,7 @@
                                
                 <div id="inquilino" style="display: none; margin-top: 3px;">
                 	<label for="inquilino">Inquilino: </label>
-                	<input type="text" name="inquilino" required />                
+                	<input type="text" name="inquilino"/>                
                 </div>
                 
 
