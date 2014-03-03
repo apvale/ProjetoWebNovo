@@ -11,6 +11,25 @@
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="<c:url value="/design/js/jquery.min.js"/>"></script>
         <script src="<c:url value="/design/js/kickstart.js"/>"></script>
+        <script>
+        	
+        $(function(){
+			$("#inquilinosim").change(function(event){
+			  if($("#inquilinosim").attr("checked")){
+				//event.preventDefault();
+			  	$("#inquilino").show(100);
+			  	console.log("passou");
+			  	
+			  }else{
+				event.preventDefault();
+			  	$("#inquilino").hide();
+			  	console.log("passou");
+			  }
+			});
+		   });
+        
+        </script>
+        
 	</head>
 	<body>
 		<h1><a style="text-decoration: none;" href="<c:url value="/inicio.jsp"/>">${tituloPage}</a></h1>
