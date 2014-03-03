@@ -12,4 +12,10 @@
     <param-name>pass</param-name>
     <param-value>projeto1691</param-value>
   </context-param>
+  
+  <listener>
+  	<listener-class>listeners.AdicionaAdministrador</listener-class>  
+  </listener>
+  
+  
 </web-app>

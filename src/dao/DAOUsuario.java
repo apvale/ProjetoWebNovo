@@ -29,4 +29,25 @@ public class DAOUsuario extends DAOJPA<Usuario> {
 			return null;
 		}
 	}
+	
+	public Usuario setarAdmin(String tipo){
+		try {
+			Query q = getManager().createQuery("UPDATE Usuario SET tipo =?1");
+			q.setParameter(1, tipo);
+			return (Usuario) q.getSingleResult();
+		} catch (Exception e) {
+			return null;
+		}
+	}
+	
+	public Usuario findById(int id) {
+		try {
+			Query q = getManager().createQuery(
+					"SELECT u FROM Usuario u WHERE u.usuario=?1");
+			q.setParameter(1, id);
+			return (Usuario) q.getSingleResult();
+		} catch (Exception e) {
+			return null;
+		}
+	}
 }
