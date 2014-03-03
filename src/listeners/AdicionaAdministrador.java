@@ -41,27 +41,19 @@ public class AdicionaAdministrador implements ServletContextListener {
     	EntityManagerFactory emf = Persistence.createEntityManagerFactory("condominio");
     	DAOUsuario dao = new DAOUsuario();
     	   	
-    	String tipo = "Administrador";
     	List<Usuario> usuarios = new ArrayList<Usuario>();
     	usuarios = dao.findAll();
     	
-    	if(usuarios==null){System.out.println("Nenhum usuário");}
+    	if(usuarios.isEmpty())System.out.println("Nenhum usuário");
     	
-    	Usuario usuario = usuarios.get(0);
+      	/*Usuario usuario = usuarios.get(0);
     	int id = usuario.getId();
     	
     	dao.findById(id);
-    	dao.close();
+    	dao.close();*/
     	
-    	if(id == 1){
-    		dao.setarAdmin(tipo);
-    	}    	
-    	else{
-    		System.out.println("Não há usuários");
-    	}
-    		
-    	}
-		
+    }
+
 		
 		
       	

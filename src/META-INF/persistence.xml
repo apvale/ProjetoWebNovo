@@ -7,6 +7,7 @@
         <!-- Classes de persistencia -->
         <class>model.Usuario</class>
         <class>model.Condomino</class>
+        <class>model.Administrador</class>
         <class>model.Veiculo</class>
         <properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />

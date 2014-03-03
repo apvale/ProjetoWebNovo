@@ -24,6 +24,11 @@ public class Veiculo implements Serializable {
 	@JoinColumn(nullable=false)
 	private Condomino dono;
 	
+	@OneToOne(cascade=CascadeType.ALL)
+	@JoinColumn(nullable=false)
+	private Administrador veiculo;
+	
+	
 	@Column(nullable=false, length=8)
 	private String placa;
 	
@@ -88,4 +93,14 @@ public class Veiculo implements Serializable {
 	public void setDono(Condomino d) {
 		this.dono = d;
 	}
+
+	public Administrador getVeiculo() {
+		return veiculo;
+	}
+
+	public void setVeiculo(Administrador veiculo) {
+		this.veiculo = veiculo;
+	}
+	
+	
 }
