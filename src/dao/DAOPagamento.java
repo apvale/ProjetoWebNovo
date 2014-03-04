@@ -15,8 +15,8 @@ public class DAOPagamento extends DAOJPA<Pagamento>{
 		try {
 			Query q = getManager().createQuery(
 					"SELECT u FROM Usuario u WHERE u.usuario=?1");
-			q.setParameter(1, login);
-			return (Usuario) q.getSingleResult();
+			q.setParameter(1, apto);
+			return (Pagamento) q.getSingleResult();
 		} catch (Exception e) {
 			return null;
 		}
