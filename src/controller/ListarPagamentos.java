@@ -10,7 +10,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import model.Condomino;
+import model.Pagamento;
 import dao.DAOCondomino;
+import dao.DAOPagamento;
 
 /**
  * Servlet implementation class ListarPagamentos
