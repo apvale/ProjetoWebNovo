@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xmlns:web_1="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+<web_1:web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xmlns:web_1="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>ProjetoPWEB2014</display-name>
-  <welcome-file-list>
-    <welcome-file>inicio.jsp</welcome-file>
-  </welcome-file-list>
-  <context-param>
+  <web_1:welcome-file-list>
+    <web_1:welcome-file>inicio.jsp</web_1:welcome-file>
+  </web_1:welcome-file-list>
+  <web_1:context-param>
     <param-name>user</param-name>
     <param-value>projeto.pweb.2014.1@gmail.com</param-value>
-  </context-param>
-  <context-param>
+  </web_1:context-param>
+  <web_1:context-param>
     <param-name>pass</param-name>
     <param-value>projeto1691</param-value>
-  </context-param>
-  <listener>
+  </web_1:context-param>
+  <web_1:listener>
     <listener-class>listeners.AdicionaAdministrador</listener-class>
-  </listener>
-</web-app>
+  </web_1:listener>
+</web_1:web-app>

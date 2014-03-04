@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@ taglib prefix="h" tagdir="/WEB-INF/tags" %>    
+<%@ taglib prefix="my" tagdir="/WEB-INF/tags" %>    
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<h:header titulo="Área do Condômino" tituloPage="Jampa Palace"/>
+<my:layout titulo="Área Condômino" tituloPage="Jampa Palace Residence">
 
 
 	<div class="areacondomino">
@@ -24,7 +24,4 @@
     </div>
     
         
-        <h:footer/>
-
-</body>
-</html>
+</my:layout>

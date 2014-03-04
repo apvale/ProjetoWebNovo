@@ -1,5 +1,19 @@
 @CHARSET "ISO-8859-1";
 
+table{
+	font-family: Philosopher;
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5{
+	font-family: Philosopher;
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5{
+	color: #00BFFF;
+}
+
 a{
 	text-decoration: none;
 	font-family: Philosopher;
@@ -153,4 +167,11 @@ h1{
 
 .botoesprincipais > a{
 	margin: 10px;
+}
+
+.pagamentos{
+	width: 960px;
+	height: 300px;
+	margin: 0 auto;
+	display: table;
 }

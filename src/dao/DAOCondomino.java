@@ -20,7 +20,7 @@ public class DAOCondomino extends DAOJPA<Condomino> {
 		
 		public Condomino findByEmail(String email){
 			try {
-				Query q = getManager().createQuery("SELECT c FROM Condomino c WHERE c.email=?1");
+				Query q = getManager().createQuery("SELECT c FROM usuario_condomino c WHERE c.email=?1");
 				q.setParameter(1, email);
 				return (Condomino) q.getSingleResult();
 			} catch (Exception e) {
@@ -30,7 +30,7 @@ public class DAOCondomino extends DAOJPA<Condomino> {
 		
 		public List<Condomino> findDesativados(){
 			try {
-				return findAllByQuery("SELECT c FROM Condomino c WHERE c.ativado=0");
+				return findAllByQuery("SELECT c FROM usuario_condomino c WHERE c.ativado=0");
 			} catch (Exception e) {
 				return null;
 			}
