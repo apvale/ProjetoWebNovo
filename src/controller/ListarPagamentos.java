@@ -35,6 +35,7 @@ public class ListarPagamentos extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		DAOPagamento dao = new DAOPagamento();
 		List<Pagamento> pagamentos = dao.findAll();
+		//teste
 		
 		request.setAttribute("pagamentos", pagamentos);
 		request.getRequestDispatcher("/historicopagamentosjsp").forward(request, response);
