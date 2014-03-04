@@ -3,6 +3,7 @@
 <%@ taglib prefix="my" tagdir="/WEB-INF/tags"%>
 <my:layout titulo="Cadastro de Condômino" tituloPage="Jampa Palace">
 	
+	teste
 
     <div class="container">
         <form method="post" action="<c:url value="/condomino/cadastro"/>" class="vertical">
